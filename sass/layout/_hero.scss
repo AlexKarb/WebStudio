@@ -13,7 +13,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../../images/hero/header-mobile.png');
+    url('../images/hero/header-mobile.png');
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -22,7 +22,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../../images/hero/header-mobile@2x.png');
+      url('../images/hero/header-mobile@2x.png');
   }
 }
 
