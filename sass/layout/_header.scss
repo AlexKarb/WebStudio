@@ -1,0 +1,164 @@
+// modile
+
+@media screen and (max-width: 767px) {
+  .nav__list,
+  .contact-list {
+    display: none;
+  }
+
+  .header__logo {
+    padding: 16px 0;
+  }
+}
+
+.header__conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// tablet +768
+@include screen('tablet') {
+  //logo
+
+  .header__logo {
+    display: block;
+    padding: 26px 0;
+    margin-right: 88px;
+  }
+
+  //  nav
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .nav__link {
+    @include font(14px, 16px, 500);
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    padding: 32px 0;
+    display: block;
+
+    transition-property: color;
+    @include animation;
+
+    &:hover,
+    &:focus {
+      color: var(--acent-color);
+    }
+
+    &_current {
+      color: var(--acent-color);
+
+      // after - blue
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        content: '';
+        display: block;
+        height: 4px;
+        background: var(--acent-color);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  // contact
+
+  .contact-list {
+    &__item {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    &__link {
+      @include font(12px, 14px, 500);
+      letter-spacing: 0.02em;
+      color: var(--main-color);
+      fill: var(--main-color);
+
+      transition-property: fill, color;
+      @include animation;
+
+      &:hover,
+      &:focus {
+        color: var(--acent-color);
+        fill: var(--acent-color);
+      }
+    }
+    &__icon {
+      margin-right: 8px;
+      &_email {
+        width: 14px;
+        height: 10px;
+      }
+      &_phone {
+        width: 10px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+// desktop +1200
+
+@include screen('desktop') {
+  .header__logo {
+    margin-right: 93px;
+    padding: 24px 0;
+  }
+
+  .contact-list {
+    display: flex;
+
+    &__item {
+      margin-bottom: 0;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+
+      padding: 32px 0;
+    }
+
+    &__icon {
+      margin-right: 10px;
+
+      &_email {
+        width: 16px;
+        height: 12px;
+      }
+      &_phone {
+        width: 10px;
+        height: 16px;
+      }
+    }
+  }
+}

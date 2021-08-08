@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- шапка сайта -->
+    <header class="header">
+      <div class="conteiner header__conteiner">
+        <nav class="nav">
+          <a href="./index.html" lang="en" class="logo header__logo link"
+            ><span class="logo__web">Web</span>Studio</a
+          >
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link link">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="./portfolio.html"
+                class="nav__link link nav__link_current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contact-list list">
+          <li class="contact-list__item">
+            <a href="mailto:info@devstudio.com" class="contact-list__link link">
+              <svg class="contact-list__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-list__item">
+            <a href="tel:+380961111111" class="contact-list__link link">
+              <svg class="contact-list__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- основной контент -->
+    <main>
+      <section class="portfolio portfolio__section">
+        <div class="conteiner">
+          <h1 class="visually-hidden">portfolio</h1>
+
+          <!-- фильтры -->
+          <div class="filter">
+            <ul class="filter__list list">
+              <li class="filter__item">
+                <button type="button" class="filter__button">Все</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Веб-сайты</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Приложения</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Дизайн</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- карточки портфолио -->
+          <div class="card">
+            <ul class="card__list list">
+              <li class="card__item">
+                <article class="product">
+                  <a href="" class="product__link link">
+                    <div class="product__image">
+                      <p class="product__description">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+
+                      <img
+                        src="./images/portfolio/img.jpg"
+                        alt="компьютер"
+                        class="card-img"
+                        width="370px"
+                        height="294px"
+                      />
+                    </div>
+                    <div class="product__content">
+                      <h2 class="product__title">Технокряк</h2>
+                      <h3 class="product__subtitle">Веб-сайт</h3>
+                    </div>
+                  </a>
+                </article>
+              </li>
+
+              <li class="card__item">
+                <article class="product">
+                  <a href="" class="product__link link">
+                    <div class="product__image">
+                      <p class="product__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Qui et explicabo delectus eligendi molestias atque
+                        maiores temporibus quia? Reprehenderit odit hic illo
+                        minima, eaque velit nobis dolor. Accusantium, quo
+                        consequatur.
+                      </p>
+                      <img
+                        src="./images/portfolio/img-2.jpg"
+                        alt="баскетболисты"
+                        class="card-img"
+                        width="370px"
+                        height="294px"
+                      />
+                    </div>
+                    <div class="product__content">
+                      <h2 class="product__title">
+                        Постер <span lang="en"> New Orlean vs Golden Star</span>
+                      </h2>
+                      <h3 class="product__subtitle">Дизайн</h3>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="card__item">
+                <article class="product">
+                  <a href="" class="product__link link">
+                    <div class="product__image">
+                      <p class="product__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Qui et explicabo delectus eligendi molestias atque
+                        maiores temporibus quia? Reprehenderit odit hic illo
+                        minima, eaque velit nobis dolor. Accusantium, quo
+                        consequatur.
+                      </p>
+                      <img
+                        src="./images/portfolio/img-3.jpg"
+                        alt="постер"
+                        class="card-img"
+                        width="370px"
+                        height="294px"
+                      />
+                    </div>
+                    <div class="product__content">
+                      <h2 class="product__title">
+                        Ресторан <span lang="en">Seafood</span>
+                      </h2>
+                      <h3 class="product__subtitle">Приложение</h3>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="card__item">
+                <article class="product">
+                  <a href="" class="product__link link">
+                    <div class="product__image">
+                      <p class="product__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Qui et explicabo delectus eligendi molestias atque
+                        maiores temporibus quia? Reprehenderit odit hic illo
+                        minima, eaque velit nobis dolor. Accusantium, quo
+                        consequatur.
+                      </p>
+                      <img
+                        src="./images/portfolio/img-4.jpg"
+                        alt="наушники"
+                        class="card-img"
+                        width="370px"
+                        height="294px"
+                      />
+                    </div>
+                    <div class="product__content">
+                      <h2 class="product__title">
+                        Проект <span lang="en">Prime</span>
+                      </h2>
+                      <h3 class="product__subtitle">Маркетинг</h3>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="card__item">
+                <article class="product">
+                  <a href="" class="product__link link">
+                    <div class="product__image">
+                      <p class="product__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Qui et explicabo delectus eligendi molestias atque
+                        maiores temporibus quia? Reprehenderit odit hic illo
+                        minima, eaque velit nobis dolor. Accusantium, quo
+                        consequatur.
+                      </p>
+                      <img
+                        src="./images/portfolio/img-5.jpg"
+                        alt="две коробки"
+                        class="card-img"
+                        width="370px"
+                        height="294px"
+                      />
+                    </div>
+                    <div class="product__content">
+                      <h2 class="product__title">
+                        Проект <span lang="en">Boxes</span>
+                      </h2>
+                      <h3 class="product__subtitle">Приложение</h3>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="card__item">
+                <article class="product">
+                  <a href="" class="product__link link">
+                    <div class="product__image">
+                      <p class="product__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Qui et explicabo delectus eligendi molestias atque
+                        maiores temporibus quia? Reprehenderit odit hic illo
+                        minima, eaque velit nobis dolor. Accusantium, quo
+                        consequatur.
+                      </p>
+                      <img
+                        src="./images/portfolio/img-6.jpg"
+                        alt="монитор"
+                        class="card-img"
+                        width="370px"
+                        height="294px"
+                      />
+                    </div>
+                    <div class="product__content">
+                      <h2 class="product__title" lang="en">
+                        Inspiration has no Borders
+                      </h2>
+                      <h3 class="product__subtitle">Веб-сайт</h3>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="card__item">
+                <article class="product">
+                  <a href="" class="product__link link">
+                    <div class="product__image">
+                      <p class="product__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Qui et explicabo delectus eligendi molestias atque
+                        maiores temporibus quia? Reprehenderit odit hic illo
+                        minima, eaque velit nobis dolor. Accusantium, quo
+                        consequatur.
+                      </p>
+                      <img
+                        src="./images/portfolio/img-7.jpg"
+                        alt="книга"
+                        class="card-img"
+                        width="370px"
+                        height="294px"
+                      />
+                    </div>
+                    <div class="product__content">
+                      <h2 class="product__title">
+                        Издание <span lang="en">Limited Edition</span>
+                      </h2>
+                      <h3 class="product__subtitle">Дизайн</h3>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="card__item">
+                <article class="product">
+                  <a href="" class="product__link link">
+                    <div class="product__image">
+                      <p class="product__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Qui et explicabo delectus eligendi molestias atque
+                        maiores temporibus quia? Reprehenderit odit hic illo
+                        minima, eaque velit nobis dolor. Accusantium, quo
+                        consequatur.
+                      </p>
+                      <img
+                        src="./images/portfolio/img-8.jpg"
+                        alt="лейбл"
+                        class="card-img"
+                        width="370px"
+                        height="294px"
+                      />
+                    </div>
+                    <div class="product__content">
+                      <h2 class="product__title">
+                        Проект <span lang="en">LAB </span>
+                      </h2>
+                      <h3 class="product__subtitle">Маркетинг</h3>
+                    </div>
+                  </a>
+                </article>
+              </li>
+              <li class="card__item">
+                <article class="product">
+                  <a href="" class="product__link link">
+                    <div class="product__image">
+                      <p class="product__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Qui et explicabo delectus eligendi molestias atque
+                        maiores temporibus quia? Reprehenderit odit hic illo
+                        minima, eaque velit nobis dolor. Accusantium, quo
+                        consequatur.
+                      </p>
+                      <img
+                        src="./images/portfolio/img-9.jpg"
+                        alt="ноубук"
+                        class="card-img"
+                        width="370px"
+                        height="294px"
+                      />
+                    </div>
+                    <div class="product__content">
+                      <h2 class="product__title" lang="en">Growing Business</h2>
+                      <h3 class="product__subtitle">Приложение</h3>
+                    </div>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- подвал -->
+    <footer class="footer">
+      <div class="conteiner footer__conteiner">
+        <div class="footer__left-side">
+          <a href="./index.html" lang="en" class="logo footer__logo link"
+            ><span class="logo__web">Web</span>Studio</a
+          >
+          <address class="footer__address">
+            <ul class="footer__address-list list">
+              <li class="footer__address-item">
+                <a
+                  href="https://goo.gl/maps/Tfscf3zxBCujbscF6"
+                  target="_blank"
+                  rel="noopener noroferrer"
+                  class="footer__address-link footer__address-link_white link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer__address-item">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer__address-link link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer__address-item">
+                <a href="tel:+380991111111" class="footer__address-link link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__center">
+          <p class="footer__subtitle">присоединяйтесь</p>
+          <ul class="social-link list">
+            <li class="social-link__items">
+              <a href="" class="social-link__link social-link__link_theme-dark">
+                <svg class="social-link__icon">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link__items">
+              <a href="" class="social-link__link social-link__link_theme-dark">
+                <svg class="social-link__icon">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link__items">
+              <a href="" class="social-link__link social-link__link_theme-dark">
+                <svg class="social-link__icon">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link__items">
+              <a href="" class="social-link__link social-link__link_theme-dark">
+                <svg class="social-link__icon">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right-side">
+          <form class="footer__mail-form">
+            <label class="footer__subtitle" for="footer-email"
+              >Подпишитесь на рассылку</label
+            >
+            <div class="footer__mail-form-conteiner">
+              <input
+                class="footer__email"
+                type="email"
+                placeholder="E-mail"
+                name="user-email"
+                id="footer-email"
+              />
+              <button type="submit" class="button __form-btn">
+                Подписаться
+                <svg class="footer__form-btn-icon" width="24" height="24">
+                  <use
+                    class="send-icon"
+                    href="./images/icons.svg#icon-icon-send"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

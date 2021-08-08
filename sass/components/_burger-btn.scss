@@ -1,0 +1,24 @@
+.burger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  fill: var(--title-color);
+
+  transition-property: fill;
+  @include animation;
+
+  &-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: var(--acent-color);
+  }
+
+  @include screen('tablet') {
+    display: none;
+  }
+}

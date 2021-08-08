@@ -1,0 +1,73 @@
+// command__list
+//card styles
+
+.command__item {
+  @include font(16px, 19px, 400);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.command__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @include screen('desktop') {
+    padding-bottom: 30px;
+  }
+}
+
+.command__name {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.command__position {
+  margin-bottom: 16px;
+}
+
+//position
+
+//tablet    768+
+@include screen('tablet') {
+  .command__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .command__item {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+//desktop  1200+
+
+@include screen('desktop') {
+  .command__item {
+    width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

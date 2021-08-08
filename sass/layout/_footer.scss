@@ -1,0 +1,149 @@
+.footer {
+  background-color: var(--footer-body-color);
+
+  &__conteiner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  &__left-side {
+    margin-bottom: 60px;
+  }
+
+  &__center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+//  footer__address
+
+.footer__address {
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-item {
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-link {
+    @include font(14px, 24px, 400);
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    @include animation;
+
+    &:hover,
+    &:focus {
+      color: var(--second-acent-color);
+    }
+  }
+}
+
+// subtitle
+
+.footer__subtitle {
+  display: block;
+  @include font(14px, 16px, 700);
+  text-transform: uppercase;
+  color: var(--second-acent-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+//mail-form
+
+.footer__mail-form-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__email {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 15px 16px;
+  cursor: pointer;
+
+  margin-bottom: 20px;
+
+  &::placeholder {
+    @include font(16px, 20px, 400);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer__form-btn-icon {
+  margin-left: 10px;
+}
+
+//768+
+
+@include screen('tablet') {
+  .footer__conteiner {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer__center {
+    margin: 0;
+    margin-left: 155px;
+  }
+
+  .footer__email {
+    width: 450px;
+  }
+}
+
+//desktop 1200+
+
+@include screen('desktop') {
+  //отступы для адрессов
+
+  .footer__address-item {
+    margin-bottom: 9px;
+  }
+
+  //центриров подзаголовка
+
+  .footer__subtitle {
+    text-align: left;
+  }
+
+  //стили для мейл формы
+
+  .footer__mail-form-conteiner {
+    flex-direction: row;
+  }
+
+  .footer__email {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+
+  //центрир элементов
+
+  .footer__center {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+}

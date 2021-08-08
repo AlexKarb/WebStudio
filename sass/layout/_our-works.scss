@@ -1,0 +1,35 @@
+.our-works {
+  display: none;
+
+  &__conteiner {
+    margin-top: 94px;
+  }
+}
+
+@include screen('desktop') {
+  .our-works {
+    display: block;
+
+    &__list {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      position: relative;
+    }
+
+    &__subtitle {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      color: var(--body-color-main);
+      padding-top: 27px;
+      padding-bottom: 27px;
+      text-align: center;
+      background-color: rgba(47, 48, 58, 0.8);
+    }
+  }
+}

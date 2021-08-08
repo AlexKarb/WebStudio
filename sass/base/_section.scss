@@ -1,0 +1,24 @@
+.section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  &:nth-child(2n + 1) {
+    background: var(--body-color-acent);
+  }
+
+  //768-1200
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    &:nth-child(2n) {
+      background: var(--body-color-acent);
+    }
+    &:nth-child(2n + 1) {
+      background: var(--body-color-main);
+    }
+  }
+
+  //+1200
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
