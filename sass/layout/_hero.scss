@@ -46,7 +46,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../../images/hero/header-tablet.png');
+      url('../images/hero/header-tablet.png');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -55,7 +55,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('../../images/hero/header-tablet@2x.png');
+        url('../images/hero/header-tablet@2x.png');
     }
   }
 }
@@ -71,7 +71,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../../images/hero/header-desktop.png');
+      url('../images/hero/header-desktop.png');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -80,7 +80,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('../../images/hero/header-desktop@2x.png');
+        url('../images/hero/header-desktop@2x.png');
     }
   }
 
