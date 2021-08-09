@@ -115,7 +115,7 @@
 
 .agree-form__checkbox:checked + .agree-form__text::before {
   background-color: var(--acent-color);
-  background-image: url('../../images/icon-check.svg');
+  background-image: url('../images/icon-check.svg');
   background-position: center;
   background-size: cover;
   border: none;
