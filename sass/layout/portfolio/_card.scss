@@ -1,0 +1,37 @@
+@media screen and (max-width: 767px) {
+  .card__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.card__item {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+}
+
+//768+
+
+@media screen and (min-width: 768px) {
+  .card {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    &__item {
+      display: flex;
+      margin: 15px;
+      width: calc((100% - 60px) / 2);
+    }
+  }
+}
+
+//1200+
+
+@include screen('desktop') {
+  .card__item {
+    width: 370px;
+  }
+}

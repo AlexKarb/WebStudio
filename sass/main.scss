@@ -21,6 +21,7 @@
 @import './components/subtitle';
 @import './components/social-link';
 @import './components/button';
+@import './components/product';
 
 //layout
 @import './layout/header';
@@ -34,3 +35,6 @@
 @import './layout/recall-form';
 
 //page - portfolio
+
+@import './layout/portfolio/filter';
+@import './layout/portfolio/card';

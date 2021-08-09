@@ -41,7 +41,7 @@
               <a href="./portfolio.html" class="nav__link link">Портфолио</a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__link link">Контакты</a>
+              <a href="#footer__address" class="nav__link link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -230,32 +230,84 @@
             <h2 class="title">Чем мы занимаемся</h2>
             <ul class="our-works__list list">
               <li class="our-works__item">
-                <img
-                  src="./images/what-we-are-doing/box1.jpg"
-                  alt="создание кода"
-                  width="370px"
-                  height="294px"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/what-we-are-doing/img1.webp    1x,
+                      ./images/what-we-are-doing/img1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <source
+                    media="min-width:1200px"
+                    srcset="
+                      ./images/what-we-are-doing/img1.jpg    1x,
+                      ./images/what-we-are-doing/img1@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+
+                  <img src="#" alt="создание кода" />
+                </picture>
+
                 <p class="subtitle our-works__subtitle">
                   Десктопные приложения
                 </p>
               </li>
               <li class="our-works__item">
-                <img
-                  src="./images/what-we-are-doing/box2.jpg"
-                  alt="синхронизация устройств"
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/what-we-are-doing/img2.webp    1x,
+                      ./images/what-we-are-doing/img2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <source
+                    media="min-width:1200px"
+                    srcset="
+                      ./images/what-we-are-doing/img2.jpg    1x,
+                      ./images/what-we-are-doing/img2@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+
+                  <img src="#" alt="синхронизация устройств" />
+                </picture>
+                <!-- <img
+             
                   width="370px"
                   height="294px"
-                />
+                /> -->
                 <p class="subtitle our-works__subtitle">Мобильные приложения</p>
               </li>
               <li class="our-works__item">
-                <img
-                  src="./images/what-we-are-doing/box3.jpg"
-                  alt="цветовая палитра"
-                  width="370px"
-                  height="294px"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/what-we-are-doing/img3.webp    1x,
+                      ./images/what-we-are-doing/img3@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <source
+                    media="min-width:1200px"
+                    srcset="
+                      ./images/what-we-are-doing/img3.jpg    1x,
+                      ./images/what-we-are-doing/img3@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+
+                  <img src="#" alt="цветовая палитра" />
+                </picture>
+
                 <p class="subtitle our-works__subtitle">Дизайнерские решения</p>
               </li>
             </ul>
@@ -264,7 +316,7 @@
       </section>
 
       <!-- Наша команда -->
-      <section class="command section">
+      <section class="command section section_grey">
         <div class="conteiner">
           <h2 class="title">Наша команда</h2>
           <ul class="command__list list">
@@ -601,7 +653,7 @@
             class="logo logo_theme-dark footer__logo link"
             ><span class="logo__web">Web</span>Studio</a
           >
-          <address class="footer__address">
+          <address class="footer__address" id="footer__address">
             <ul class="footer__address-list list">
               <li class="footer__address-item">
                 <a

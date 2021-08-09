@@ -95,7 +95,7 @@
   margin-left: 10px;
 }
 
-//768+
+///////////////////768+
 
 @include screen('tablet') {
   .footer__conteiner {
@@ -113,7 +113,7 @@
   }
 }
 
-//desktop 1200+
+//////////////////////desktop 1200+
 
 @include screen('desktop') {
   //отступы для адрессов
@@ -141,6 +141,14 @@
   }
 
   //центрир элементов
+
+  .footer__conteiner {
+    align-items: baseline;
+  }
+
+  .footer__left-side {
+    margin-bottom: 0px;
+  }
 
   .footer__center {
     margin-left: 70px;
