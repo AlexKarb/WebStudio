@@ -97,8 +97,10 @@
     color: var(--main-color);
 
     &_accent {
-      @include font(34px, 40px, 500);
       color: var(--acent-color);
+      @media screen and (min-width: 480px) {
+        @include font(34px, 40px, 500);
+      }
     }
 
     &:hover,
@@ -117,7 +119,7 @@
     margin-right: 10px;
     display: flex;
 
-    &:not(:first-child)::before {
+    &::before {
       content: '';
       display: block;
       width: 0px;
@@ -127,11 +129,50 @@
       //   transform: rotate(90deg);
       margin-right: 10px;
     }
+
+    &:first-child::before {
+      display: none;
+    }
   }
 
   &-link {
     @include font(18px, 22px, 500);
     letter-spacing: 0.02em;
     color: var(--acent-color);
+  }
+}
+
+//до479
+@media screen and (max-width: 479px) {
+  .mobile-menu__social {
+    flex-wrap: wrap;
+    padding-right: 20px;
+
+    &-item {
+      margin-bottom: 8px;
+
+      &:first-child::before {
+        display: block;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+//до319
+
+@media screen and (max-width: 319px) {
+  .mobile-menu__contact-link {
+    font-size: 22px;
+  }
+
+  .mobile-menu__social {
+    flex-direction: column;
+
+    &-item {
+      &:first-child::before {
+        margin-left: 0px;
+      }
+    }
   }
 }
