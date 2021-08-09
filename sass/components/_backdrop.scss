@@ -12,7 +12,7 @@
   pointer-events: auto;
   transform: scale(1);
 
-  transition-property: opacity, visibility, scale;
+  transition-property: opacity, visibility, transform;
   @include animation;
 }
 

@@ -2,6 +2,8 @@
   display: inline-block;
   background-color: var(--body-color-main);
   border: 1px solid #eeeeee;
+  transition-property: box-shadow;
+  @include animation;
 
   &:hover,
   &:focus {
