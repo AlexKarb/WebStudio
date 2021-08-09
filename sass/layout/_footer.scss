@@ -118,11 +118,18 @@
 @include screen('desktop') {
   //отступы для адрессов
 
+  .footer__address-list {
+    align-items: flex-start;
+  }
   .footer__address-item {
     margin-bottom: 9px;
   }
 
   //центриров подзаголовка
+
+  .footer__logo {
+    text-align: left;
+  }
 
   .footer__subtitle {
     text-align: left;

@@ -1308,8 +1308,16 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
+  .footer__address-list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .footer__address-item {
     margin-bottom: 9px;
+  }
+  .footer__logo {
+    text-align: left;
   }
   .footer__subtitle {
     text-align: left;
