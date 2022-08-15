@@ -37,4 +37,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-color);
   background-color: #fff;
+
+  &.modal-is-open {
+    overflow: hidden;
+  }
 }
