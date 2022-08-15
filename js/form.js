@@ -12,7 +12,7 @@ document.querySelector('.call-form').addEventListener('submit', e => {
           </div>`;
 
   setTimeout(() => {
-    document.querySelector('[data-modal]').classList.toggle('is-hidden');
+    document.querySelector('[data-modal]').classList.toggle('visually-hidden');
     document.body.classList.toggle('modal-is-open');
   }, 2000);
 });

@@ -1,7 +1,7 @@
 document.querySelector('.footer__mail-form').addEventListener('submit', e => {
   e.preventDefault();
 
-  document.querySelector('[data-modal]').classList.toggle('is-hidden');
+  document.querySelector('[data-modal]').classList.toggle('visually-hidden');
 
   document.body.classList.toggle('modal-is-open');
 
@@ -16,7 +16,7 @@ document.querySelector('.footer__mail-form').addEventListener('submit', e => {
           </div>`;
 
   setTimeout(() => {
-    document.querySelector('[data-modal]').classList.toggle('is-hidden');
+    document.querySelector('[data-modal]').classList.toggle('visually-hidden');
     document.body.classList.toggle('modal-is-open');
   }, 2000);
 });
