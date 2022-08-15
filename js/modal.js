@@ -14,7 +14,7 @@
   });
 
   function toggleModal() {
-    refs.modal.classList.toggle('backdrop');
+    refs.modal.classList.toggle('visually-hidden');
     document.body.classList.toggle('modal-is-open');
   }
 })();

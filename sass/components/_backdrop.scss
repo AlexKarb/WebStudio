@@ -1,7 +1,4 @@
 .backdrop {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
   transform: scale(1);
 
   position: fixed;
@@ -21,6 +18,10 @@
 
   transition-property: opacity, visibility, transform;
   @include animation;
+
+  &.visually-hidden {
+    transform: scale(0);
+  }
 }
 
 .is-hidden {

@@ -122,9 +122,6 @@ body.modal-is-open {
 }
 
 .backdrop {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
   -webkit-transform: scale(1);
           transform: scale(1);
   position: fixed;
@@ -153,6 +150,11 @@ body.modal-is-open {
           transition-duration: var(--time-animation);
   -webkit-transition-timing-function: var(--cubic-bezier);
           transition-timing-function: var(--cubic-bezier);
+}
+
+.backdrop.visually-hidden {
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .is-hidden {
