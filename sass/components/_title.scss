@@ -5,6 +5,15 @@
   margin-bottom: 30px;
 }
 
+.subtitle {
+  text-align: center;
+  margin: 15px;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
 // desktop
 
 @include screen('desktop') {

@@ -78,6 +78,10 @@ body.modal-is-open {
   background-color: var(--body-color-main);
 }
 
+.section.contract {
+  padding-top: 30px;
+}
+
 .section_grey {
   background: var(--body-color-acent);
 }
@@ -87,9 +91,12 @@ body.modal-is-open {
     padding-bottom: 94px;
     padding-top: 94px;
   }
+  .section.contract {
+    padding-top: 30px;
+  }
 }
 
-.conteiner {
+.container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -97,19 +104,19 @@ body.modal-is-open {
 }
 
 @media screen and (min-width: 480px) {
-  .conteiner {
+  .container {
     max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .conteiner {
+  .container {
     max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .conteiner {
+  .container {
     max-width: 1200px;
   }
 }
@@ -309,6 +316,15 @@ body.modal-is-open {
   text-align: center;
   color: var(--title-color);
   margin-bottom: 30px;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 15px;
+}
+
+.text {
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -511,7 +527,7 @@ body.modal-is-open {
   }
 }
 
-.header__conteiner {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -856,7 +872,7 @@ body.modal-is-open {
   }
 }
 
-.hero__conteiner {
+.hero__container {
   padding: 15px;
   height: 400px;
   display: -webkit-box;
@@ -877,7 +893,7 @@ body.modal-is-open {
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero__conteiner {
+  .hero__container {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/header-mobile@2x.png");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header-mobile@2x.png");
   }
@@ -898,21 +914,21 @@ body.modal-is-open {
 }
 
 @media only screen and (min-width: 768px) {
-  .hero__conteiner {
+  .hero__container {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/header-tablet.png");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header-tablet.png");
   }
 }
 
 @media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero__conteiner {
+  .hero__container {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/header-tablet@2x.png");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header-tablet@2x.png");
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .hero__conteiner {
+  .hero__container {
     max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/header-desktop.png");
@@ -921,7 +937,7 @@ body.modal-is-open {
 }
 
 @media only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero__conteiner {
+  .hero__container {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/header-desktop@2x.png");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header-desktop@2x.png");
   }
@@ -936,7 +952,7 @@ body.modal-is-open {
   }
 }
 
-.identity__conteiner-icon {
+.identity__container-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -999,7 +1015,7 @@ body.modal-is-open {
   display: none;
 }
 
-.our-works__conteiner {
+.our-works__container {
   margin-top: 94px;
 }
 
@@ -1169,7 +1185,7 @@ body.modal-is-open {
   background-color: var(--footer-body-color);
 }
 
-.footer__conteiner {
+.footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
   display: -webkit-box;
@@ -1247,7 +1263,7 @@ body.modal-is-open {
   text-align: center;
 }
 
-.footer__mail-form-conteiner {
+.footer__mail-form-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1305,7 +1321,7 @@ body.modal-is-open {
 }
 
 @media only screen and (min-width: 768px) {
-  .footer__conteiner {
+  .footer__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1338,7 +1354,7 @@ body.modal-is-open {
   .footer__subtitle {
     text-align: left;
   }
-  .footer__mail-form-conteiner {
+  .footer__mail-form-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1349,7 +1365,7 @@ body.modal-is-open {
     margin-bottom: 0;
     margin-right: 12px;
   }
-  .footer__conteiner {
+  .footer__container {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;

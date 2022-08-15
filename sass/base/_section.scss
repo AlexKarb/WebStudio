@@ -7,6 +7,10 @@
   //   background: var(--body-color-acent);
   // }
 
+  &.contract {
+    padding-top: 30px;
+  }
+
   &_grey {
     background: var(--body-color-acent);
   }
@@ -15,5 +19,9 @@
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
     padding-top: 94px;
+
+    &.contract {
+      padding-top: 30px;
+    }
   }
 }
