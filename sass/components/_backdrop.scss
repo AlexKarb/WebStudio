@@ -1,4 +1,9 @@
 .backdrop {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0);
+
   position: fixed;
   top: 0;
   left: 0;
@@ -14,19 +19,13 @@
   align-items: flex-start;
   padding: 40px 10px;
 
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: scale(1);
-
   transition-property: opacity, visibility, transform;
   @include animation;
 }
 
 .is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  top: -50%;
-  transform: scale(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1);
 }

@@ -111,6 +111,11 @@ body.modal-is-open {
 }
 
 .backdrop {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transform: scale(0);
+          transform: scale(0);
   position: fixed;
   top: 0;
   left: 0;
@@ -129,11 +134,6 @@ body.modal-is-open {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 40px 10px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  -webkit-transform: scale(1);
-          transform: scale(1);
   -webkit-transition-property: opacity, visibility, -webkit-transform;
   transition-property: opacity, visibility, -webkit-transform;
   transition-property: opacity, visibility, transform;
@@ -145,12 +145,11 @@ body.modal-is-open {
 }
 
 .is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  top: -50%;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .modal-window {

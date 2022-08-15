@@ -1,11 +1,6 @@
 document.querySelector('.footer__mail-form').addEventListener('submit', e => {
   e.preventDefault();
 
-  console.log(
-    "~ document.querySelector('[data-modal]')",
-    document.querySelector('[data-modal]'),
-  );
-
   document.querySelector('[data-modal]').classList.toggle('is-hidden');
 
   document.body.classList.toggle('modal-is-open');
