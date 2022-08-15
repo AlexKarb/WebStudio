@@ -7,7 +7,7 @@ document.querySelector('.call-form').addEventListener('submit', e => {
             Ожидайте, с вами свяжется наш менеджер!
 
             <svg class="call-form__recall_icon">
-              <use href="../images/smile.svg#smile" />
+              <use href="./images/smile.svg#smile" />
             </svg>
           </div>`;
 

@@ -16,7 +16,7 @@ document.querySelector('.footer__mail-form').addEventListener('submit', e => {
             Вы успешно подписались на рассылку!
 
             <svg class="call-form__recall_icon">
-              <use href="../images/smile.svg#smile" />
+              <use href="./images/smile.svg#smile" />
             </svg>
           </div>`;
 
