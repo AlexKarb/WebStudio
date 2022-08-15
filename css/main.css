@@ -148,6 +148,7 @@ body.modal-is-open {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  top: -50%;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
