@@ -1,8 +1,5 @@
 .modal-window {
-  position: absolute;
-  top: 8%;
-  left: 50%;
-  transform: scale(1) translateX(-50%);
+  position: relative;
 
   width: 280px;
   padding: 40px;
@@ -21,6 +18,7 @@
     text-align: center;
 
     color: var(--title-color);
+    margin-bottom: 10px;
   }
 }
 

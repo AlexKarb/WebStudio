@@ -4,7 +4,7 @@
 
 //conteiner user info - list
 .call-form {
-  &__conteiner {
+  &__container {
     margin-bottom: 10px;
     fill: var(--title-color);
 
@@ -82,6 +82,30 @@
     &::placeholder {
       @include font(14px, 16px, 400);
       color: rgba(117, 117, 117, 0.5);
+    }
+  }
+
+  &__recall {
+    font-size: 21px;
+    font-weight: 700;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_icon {
+      width: 50px;
+      height: 50px;
+      fill: #2196f3;
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      font-size: 19px;
+      font-weight: 700;
+      padding: 0px 0;
+      text-align: center;
     }
   }
 }

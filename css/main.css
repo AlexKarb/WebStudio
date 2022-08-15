@@ -64,6 +64,10 @@ body {
   background-color: #fff;
 }
 
+body.modal-is-open {
+  overflow: hidden;
+}
+
 .section {
   padding-bottom: 60px;
   padding-top: 60px;
@@ -114,6 +118,17 @@ body {
   width: 100%;
   z-index: 999999999;
   background: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 40px 10px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -138,11 +153,7 @@ body {
 }
 
 .modal-window {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: scale(1) translate(-50%, -50%);
-          transform: scale(1) translate(-50%, -50%);
+  position: relative;
   width: 280px;
   padding: 40px;
   background: var(--body-color-main);
@@ -162,6 +173,7 @@ body {
   font-weight: 700;
   text-align: center;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 
 .modal-window__close-button {
@@ -1351,7 +1363,7 @@ body {
   margin-bottom: 20px;
 }
 
-.call-form__conteiner {
+.call-form__container {
   margin-bottom: 10px;
   fill: var(--title-color);
   -webkit-transition-property: fill, color;
@@ -1362,12 +1374,12 @@ body {
           transition-timing-function: var(--cubic-bezier);
 }
 
-.call-form__conteiner:hover, .call-form__conteiner:focus {
+.call-form__container:hover, .call-form__container:focus {
   color: var(--acent-color);
   fill: var(--acent-color);
 }
 
-.call-form__conteiner:last-child {
+.call-form__container:last-child {
   margin-bottom: 0;
 }
 
@@ -1455,6 +1467,39 @@ body {
   line-height: 1.14;
   font-weight: 400;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.call-form__recall {
+  font-size: 21px;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.call-form__recall_icon {
+  width: 50px;
+  height: 50px;
+  fill: #2196f3;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .call-form__recall {
+    font-size: 19px;
+    font-weight: 700;
+    padding: 0px 0;
+    text-align: center;
+  }
 }
 
 .agree-form {
@@ -1580,6 +1625,13 @@ body {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   outline: none;
+}
+
+.filter__button.active {
+  color: var(--second-acent-color);
+  background-color: var(--acent-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 @media only screen and (min-width: 768px) {
